@@ -1,0 +1,25 @@
+<div class="background">
+<section class="course">
+    <div class="container">
+        <h1 class="text-center">PACKAGES</h1>
+    
+        <div class="row mt-5" >
+            <div class="col-lg-3 mb-5" *ngFor="let cs of course">
+                <div class="box shadow-sm">
+                    <img src="{{cs.images}}" width="100%">
+                    <h4 class="mt-2">{{cs.name}}</h4>
+                    <p clas="mt-2">{{cs.description}}</p>
+                   
+                    <button class="btn btn-primary btn-sm mt-2">
+                        <a routerLink="/add-component">
+                        BOOK NOW</a>
+                    </button>
+                </div>
+                <p class="par">CLICK BOOK NOW...!! TO BOOK YOUR TICKET</p>
+    
+            </div>
+        </div>
+    
+    </div>
+    </section>
+    </div>

@@ -1,0 +1,30 @@
+<div class ="background">
+  <marquee>***WELCOME TO ONLINE TICKET BOOKING***</marquee>
+<div align="center" class="container">
+  <br>
+  <h1>BOOK YOUR TICKET</h1>
+  <form #insertform="ngForm" (ngSubmit)="insertdata(insertform)" >
+      <label>Name : </label>
+      <input type="text"  #name (ngModel)="name" name="name">
+      <label>Address : </label>
+      <input type="text"    #address (ngModel)="address" name="address">
+      <label>Arrivals</label>
+      <input type="text"  #arrivals (ngModel)="arrivals" name="arrivals">
+      <label>Email : </label>
+      <input type="text"  #email (ngModel)="email" name="email">
+      <label>Guest </label>
+      <input type="text"  #guest (ngModel)="guest" name="guest">
+      <label>Leaving </label>
+      <input type="text"  #leaving (ngModel)="leaving" name="leaving">
+      <label>location : </label>
+      <input type="text"  #location (ngModel)="location" name="location">
+      <label>Phone : </label>
+      <input type="text"  #phone (ngModel)="phone" name="phone"><br><br>
+      <button type="submit"  class="btn-btn-success" value="insert">BOOK</button>
+  </form><br><br>
+  <a class="nav-link" routerLink="/delete-component">CANCEL TICKET</a><br><br>
+  <a class="nav-link" routerLink="/update-component">UPDATE TICKET</a><br><br>
+  <a class="nav-link" routerLink="/fetch-component">VIEW</a><br><br>
+</div>
+</div>
+<router-outlet></router-outlet>

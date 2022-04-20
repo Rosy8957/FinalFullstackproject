@@ -1,0 +1,29 @@
+
+    h1 {
+        text-align: center;
+        padding-top: 10px;
+        color: orangered;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+    
+    }
+  
+.par{
+            color: white;
+        }
+    
+.course
+{
+    background-color: black;
+    padding: 50px 100px;
+}
+.box
+{
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+a{
+    color: orangered;
+    font-size: 18px;
+    font-weight: bolder;
+}

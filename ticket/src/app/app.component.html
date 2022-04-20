@@ -1,0 +1,38 @@
+<div class="background" *ngFor="let cs of course">
+  
+ <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" routerLink="">ONLINE TICKET BOOKING</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home-component">HOME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/about-component">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/packages-component">PACKAGES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contactus-component">CONTACT US</a>
+        </li>
+    </ul>
+  </div>
+</nav>
+  <div class="content" id="home">
+    <h1><span>TRAVEL!!!</span><br>
+        Before you run out of <span >TIME...</span>
+    </h1>
+        <p class="par">Travelling is an amazing way to learn a lot of things in life.<br>A lot of people around world travel every year to many places.<br>Moreover,Some travel to learn more while some travel to take a break from their life.<br>Travelling opens big door for us to explore the world beyond our imagination & indulge in many things.<br>Therefore, through this Essay on Travel, we will go through everything that makes travelling great.</p>
+        <button class="cn">JOIN US</button>
+</div>
+<div class="form">
+  <img src="{{cs.images}}" width="100%">
+</div>
+</div>
+  <router-outlet></router-outlet>
+ 
+

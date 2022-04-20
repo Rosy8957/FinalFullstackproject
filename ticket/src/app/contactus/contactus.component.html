@@ -1,0 +1,18 @@
+<div class="background">
+    <div class="container2" id="contact">
+		<div class="contact-box">
+			<div class="left"  *ngFor="let cs of course">
+                <img src="{{cs.images}}" width="100%">
+            </div>
+			<div class="right">
+				<h2>Contact Us</h2>
+				<input type="text" class="field" placeholder="Your Name">
+				<input type="text" class="field" placeholder="Your Email">
+				<input type="text" class="field" placeholder="Phone">
+				<textarea placeholder="Message" class="field"></textarea>
+				<button class="btn1">SEND</button>
+			</div>
+		</div>
+	</div>
+    <a class="nav-link" routerLink="/home-component">HOME PAGE</a><br>
+</div>

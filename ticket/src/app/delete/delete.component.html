@@ -1,0 +1,20 @@
+<div class="background">
+<div align="center" class="container">
+  
+  <br>
+  <h1>CANCEL TICKET</h1><br>
+  <form #deleteform="ngForm" (ngSubmit)="deletedata(deleteform)">
+
+      <label>Name : </label><br>
+      <input type="text"  #name (ngModel)="name" name="name">
+      <br><br>  
+      <button type="submit"  class="btn-btn-success" value="delete">CANCEL TICKET</button>
+      
+  </form><br><br>
+  <p>Click here to view data....!!!</p>
+  <a class="nav-link" routerLink="/fetch-component">VIEW TICKET DETAILS</a><br><br>
+</div>
+</div>
+<router-outlet></router-outlet>
+
+
